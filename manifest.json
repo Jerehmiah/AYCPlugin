@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TouchBistro Report Processor",
+  "version": "1.0.0",
+  "description": "Processes TouchBistro reports to add sales data to a CSV.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://admin.touchbistro.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none';"
+  }
+}
